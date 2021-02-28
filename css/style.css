@@ -1,9 +1,5 @@
-.u-text-center{
-    text-align: center;
-}
-.big-font{
-    font-size: 10rem;
-}
-.small-font{
-    font-size: 5rem;
-}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0; }
