@@ -1,5 +1,54 @@
+.header-section {
+  height: 100vh;
+  position: relative; }
+
+.position-hidden {
+  left: -3rem; }
+
+.position-shown {
+  left: 0rem; }
+
+.connect {
+  width: 18rem;
+  position: absolute;
+  top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all .4s; }
+  .connect-list {
+    list-style: none; }
+    .connect-list__btn {
+      width: 16rem;
+      text-align: center;
+      display: inline-block;
+      font-size: 2rem;
+      align-self: flex-start; }
+    .connect-list__link:link, .connect-list__link:visited {
+      color: #000; }
+    .connect-list__icon {
+      font-size: 2.85rem;
+      transition: all .2s; }
+      .connect-list__icon:hover {
+        transform: translateX(10px) scale(1.3); }
+        .connect-list__icon:hover.fa-facebook-square {
+          color: #3b5998; }
+        .connect-list__icon:hover.fa-twitter-square {
+          color: #1da1f2; }
+        .connect-list__icon:hover.fa-linkedin {
+          color: #0a66c2; }
+        .connect-list__icon:hover.fa-github-square {
+          color: #777; }
+        .connect-list__icon:hover.fa-instagram-square {
+          color: #c32aa3; }
+      .connect-list__icon:active {
+        transform: translateX(8px) scale(1.3); }
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0; }
+
+body {
+  font-size: 10px; }

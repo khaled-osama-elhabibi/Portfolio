@@ -1,6 +1,10 @@
-*,
-*::after,
-*::before{
-    margin: 0;
-    padding: 0;
-} 
+@import "sass/abstract/variables" ; 
+     
+@import "sass/layout/header";  
+
+@import "sass/base/base" ;
+
+
+@import "sass/component/nav";      
+
+ 

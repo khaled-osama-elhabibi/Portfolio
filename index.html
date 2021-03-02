@@ -4,22 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/4cdc21eaea.js" crossorigin="anonymous"></script>
+    
     <title>Khaled Osama</title>
 </head>
 <body>
-    <button id ="btnAddPara" >Don't click me</button>
-    <div id="paraContainer"></div>
-    <script>
-        let paraContainer = document.querySelector("#paraContainer");
-        let btn = document.querySelector("#btnAddPara");
-        
-        btn.addEventListener("click",()=>{
-            let p = document.createElement("p");
-            let pInnerText = document.createTextNode("I said don't click me ");
-            p.append(pInnerText);
-            paraContainer.append(p);
-        });
-    </script>
+
+    <header class="header-section">
+        <div id="connect" class="connect position-hidden">
+            <ul id="connect-list" class="connect-list">
+                <li class="connect-list__item">   
+                    <a href="#" class="connect-list__link">
+                        <i id="facebook" class="connect-list__icon fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="connect-list__item">
+                    <a href="#" class="connect-list__link">
+                        <i id="twitter" class="connect-list__icon fab fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li class="connect-list__item">
+                    <a href="#" class="connect-list__link"> 
+                        <i id='linkedin' class="connect-list__icon fab fa-linkedin"></i>    
+                    </a>
+                </li>
+                <li class="connect-list__item">
+                    <a href="#" class="connect-list__link"> 
+                        <i id="github" class="connect-list__icon fab fa-github-square"></i>    
+                    </a>
+                </li>
+                <li class="connect-list__item">
+                    <a href="#" class="connect-list__link"> 
+                        <i id="instagram" class="connect-list__icon fab fa-instagram-square"></i>    
+                    </a>
+                </li>
+            </ul>
+            <span id='connect-list__btn' class="connect-list__btn">Let's get in touch</span>    
+        </div>
+
+    </header>
+    
+    <script src="js/main.js"></script>
+    
+    
+
 </body>
 </html>
