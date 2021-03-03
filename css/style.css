@@ -1,3 +1,9 @@
+.visible {
+  visibility: visible; }
+
+.hidden {
+  visibility: hidden; }
+
 .header-section {
   height: 100vh;
   position: relative; }
@@ -58,7 +64,7 @@
 .projects {
   position: absolute;
   bottom: 0;
-  height: 60vh;
+  height: 70vh;
   width: 100vw; }
 
 .project__card {
@@ -86,7 +92,7 @@
 
 .position-right {
   left: 100%;
-  transform: translateY(-50%) translateX(-100%) scale(0.5); }
+  transform: translateY(-50%) translateX(-104%) scale(0.5); }
   .position-right-out {
     left: 125%;
     transform: translateY(-50%) scale(0.5); }
@@ -106,8 +112,9 @@ body {
   width: 5rem;
   height: 5rem;
   position: absolute;
+  top: 50%;
   border: none;
-  background-color: #8b0000;
+  background-color: transparent;
   border-radius: 50%;
   transition: all .4s; }
   .navigation-btn::after, .navigation-btn::before {
@@ -117,35 +124,33 @@ body {
     border-top: 5px solid #000;
     position: absolute;
     left: 50%; }
+  .navigation-btn::before {
+    top: 35.5%;
+    transform: translateX(-50%) rotate(42deg); }
+  .navigation-btn::after {
+    bottom: 35.5%;
+    transform: translateX(-50%) rotate(-42deg); }
   .navigation-btn:focus {
     outline: none; }
   .navigation-btn:active, .navigation-btn:hover {
     background-color: #000; }
     .navigation-btn:active::after, .navigation-btn:active::before, .navigation-btn:hover::after, .navigation-btn:hover::before {
       border-top: 5px solid #8b0000; }
-  .navigation-btn:hover {
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.7);
-    transform: scale(0.65) translateY(-65%); }
-  .navigation-btn:active {
-    transform: scale(0.65) translateY(-54%);
-    box-shadow: 0 0.75rem 4rem rgba(0, 0, 0, 0.7); }
   .navigation-btn--right {
-    top: 50%;
-    right: 1rem;
-    transform: scale(0.65) translateY(-50%); }
-    .navigation-btn--right::before {
-      top: 35.5%;
-      transform: translateX(-50%) rotate(42deg); }
-    .navigation-btn--right::after {
-      bottom: 35.5%;
-      transform: translateX(-50%) rotate(-42deg); }
+    transform: scale(0.65) translateY(-50%) rotate(0deg);
+    right: 1rem; }
+    .navigation-btn--right:hover {
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.7);
+      transform: scale(0.65) translateY(-65%) rotate(0deg); }
+    .navigation-btn--right:active {
+      transform: scale(0.65) translateY(-54%) rotate(0deg);
+      box-shadow: 0 0.75rem 4rem rgba(0, 0, 0, 0.7); }
   .navigation-btn--left {
-    top: 50%;
-    left: 1rem;
-    transform: scale(0.65) translateY(-50%); }
-    .navigation-btn--left::before {
-      top: 35.5%;
-      transform: translateX(-50%) rotate(-42deg); }
-    .navigation-btn--left::after {
-      bottom: 35.5%;
-      transform: translateX(-50%) rotate(42deg); }
+    transform: scale(0.65) translateY(-50%) rotate(180deg);
+    left: 1rem; }
+    .navigation-btn--left:hover {
+      box-shadow: 0 -1.5rem 4rem rgba(0, 0, 0, 0.7);
+      transform: scale(0.65) translateY(-65%) rotate(180deg); }
+    .navigation-btn--left:active {
+      transform: scale(0.65) translateY(-54%) rotate(180deg);
+      box-shadow: 0 -0.75rem 4rem rgba(0, 0, 0, 0.7); }

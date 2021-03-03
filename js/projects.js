@@ -8,7 +8,7 @@ class Projects {
             else this.projs[i].classList.add('position-right-out');
         }
     }
-    moveRight(){
+    moveRight(btnRight,btnLeft){
         let indexOfNextCard = this.projs.length - this.numOfCardsRightOut() ;
 
         if(indexOfNextCard < this.projs.length) 
@@ -21,13 +21,16 @@ class Projects {
         {
             this.projs[indexOfNextCard-3].classList.replace('position-left','position-left-out');
         }
+
+        if(this.numOfCardsRightOut() === 0) btnRight.classList.replace( 'visible' , 'hidden' );
+        if(this.numOfCardsLeftOut() > 0) btnLeft.classList.replace(  'hidden' , 'visible' );
     }
     numOfCardsRightOut(){
         let i = (this.projs.length - 1);
         while(this.projs[i].classList.contains('position-right-out')==true) {i--;}
         return ((this.projs.length -1) - i);
     }
-    moveLeft(){
+    moveLeft(btnRight,btnLeft){
         let indexOfNextCard = this.numOfCardsLeftOut() - 1;
         if(indexOfNextCard >= 0)
         {
@@ -39,6 +42,10 @@ class Projects {
         {
             this.projs[indexOfNextCard+3].classList.replace('position-right','position-right-out');
         }
+        
+        if(this.numOfCardsLeftOut() === 0) btnLeft.classList.replace( 'visible' , 'hidden');
+        if(this.numOfCardsRightOut() > 0) btnRight.classList.replace( 'hidden', 'visible' );
+
     }
     numOfCardsLeftOut(){
         let i = 0;

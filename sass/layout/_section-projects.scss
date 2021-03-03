@@ -7,7 +7,7 @@
 .projects{
     position: absolute;
     bottom: 0;
-    height: 60vh;
+    height: 70vh;
     width: 100vw;
 }
 .project{
@@ -39,7 +39,7 @@
     }
     &-right{         
         left: 100%;
-        transform: translateY(-50%) translateX(-100%)  scale(.5);
+        transform: translateY(-50%) translateX(-104%)  scale(.5);
         &-out{
             left: 125%;
             transform: translateY( -50%) scale(.5);

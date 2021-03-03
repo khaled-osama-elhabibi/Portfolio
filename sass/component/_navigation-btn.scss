@@ -3,20 +3,28 @@
     width: 5rem;
     height: 5rem;
     position: absolute;
+    top: 50%;
     border: none;
-    background-color: $color-dark-red;
+    background-color: transparent;
     border-radius: 50%;
     transition: all .4s;
-
     &::after,&::before{
         display: inline-block;
         content: '';
         width: 2rem;
         border-top: 5px solid $color-black;
-
         position: absolute;
         left: 50%;
     }
+    &::before{
+        top: 35.5%;
+        transform: translateX(-50%) rotate(42deg);
+    }
+    &::after{
+        bottom: 35.5%;
+        transform: translateX(-50%) rotate(-42deg);
+    } 
+
     &:focus{outline: none;}
     &:active,&:hover{
         background-color:  $color-black;
@@ -24,38 +32,29 @@
             border-top: 5px solid $color-dark-red;
         }
     }
-    &:hover{
-        box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: .7);
-        transform: scale(.65) translateY(-65%);
-    }
-    &:active{
-        transform: scale(.65) translateY(-54%);
-        box-shadow: 0 .75rem 4rem rgba($color: $color-black, $alpha: .7);
-    }
     &--right{
-        top: 50%;
+        transform: scale(.65) translateY(-50%) rotate(0deg);
         right: 1rem;
-        transform: scale(.65) translateY(-50%);
-        &::before{
-            top: 35.5%;
-            transform: translateX(-50%) rotate(42deg);
+        &:hover{
+            box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: .7);
+            transform: scale(.65) translateY(-65%) rotate(0deg);
         }
-        &::after{
-            bottom: 35.5%;
-            transform: translateX(-50%) rotate(-42deg);
+        &:active{
+            transform: scale(.65) translateY(-54%) rotate(0deg);
+            box-shadow: 0 .75rem 4rem rgba($color: $color-black, $alpha: .7);
         }
     }
     &--left{
-        top: 50%;
+        transform: scale(.65) translateY(-50%) rotate(180deg);
         left: 1rem;
-        transform: scale(.65) translateY(-50%);
-        &::before{
-            top: 35.5%;
-            transform:translateX(-50%) rotate(-42deg);
+        &:hover{
+            box-shadow: 0 -1.5rem 4rem rgba($color: $color-black, $alpha: .7);
+            transform: scale(.65) translateY(-65%) rotate(180deg);
         }
-        &::after{
-            bottom: 35.5%;
-            transform:translateX(-50%) rotate(42deg);
-        }
+        &:active{
+            transform: scale(.65) translateY(-54%) rotate(180deg);
+            box-shadow: 0 -.75rem 4rem rgba($color: $color-black, $alpha: .7);
+        }    
     }
 }
+

@@ -25,12 +25,24 @@
 let sectionProjects = document.getElementById('section-projects');
 let projs = new Projects(document.getElementsByClassName('project__card'));
 
+let btnRight = document.getElementById('btn-right');
+btnRight.classList.add('visible')
+let btnLeft = document.getElementById('btn-left');
+btnLeft.classList.add('hidden')
+
+btnRight.addEventListener('click',()=>{
+    projs.moveRight(btnRight,btnLeft);
+})
+btnLeft.addEventListener('click',()=>{
+    projs.moveLeft(btnRight,btnLeft);
+})
+
 document.addEventListener('keydown',(e)=>{
     if(e.code === 'ArrowRight'){
-        projs.moveRight();
+        projs.moveRight(btnRight,btnLeft);
     }
     else if(e.code === 'ArrowLeft'){
-        projs.moveLeft();
+        projs.moveLeft(btnRight,btnLeft);
     }
     
 })
