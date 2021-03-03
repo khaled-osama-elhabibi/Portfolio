@@ -6,6 +6,7 @@
 }
 .project{
     &__card{
+        border-radius: 8px; 
         display: inline-block;
         height: 16rem;
         width: 22rem;
@@ -16,6 +17,68 @@
         box-shadow: 0rem 1rem 3rem rgba($color: $color-black, $alpha: .7) ;
         
         top:50%;
+/*        &:hover{
+
+        }*/
+    }
+    &__btn-nav{
+        cursor: pointer;
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        border: none;
+        background-color: $color-dark-red;
+        border-radius: 50%;
+        transform: scale(.65);
+        transition: all .4s;
+        &::after,&::before{
+            display: inline-block;
+            content: '';
+            width: 2rem;
+            border-top: 5px solid $color-black;
+
+            position: absolute;
+            left: 50%;
+        }
+        &:focus{outline: none;}
+        &:active,&:hover{
+            background-color:  $color-black;
+            &::after,&::before{
+                border-top: 5px solid $color-dark-red;
+            }
+        }
+        &:hover{
+            box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: .7);
+            transform: scale(.65) translateY(-6px);
+        }
+        &:active{
+            transform: scale(.65) translateY(-3px);
+            box-shadow: 0 .75rem 4rem rgba($color: $color-black, $alpha: .7);
+        }
+        &--right{
+            top: 5rem;
+            left: 5rem;
+            &::before{
+                top: 35.5%;
+                transform: translateX(-50%) rotate(42deg);
+            }
+            &::after{
+                bottom: 35.5%;
+                transform: translateX(-50%) rotate(-42deg);
+            }
+        }
+        &--left{
+            bottom: 5rem;
+            right: 5rem;
+            &::before{
+                top: 35.5%;
+                transform:translateX(-50%) rotate(-42deg);
+            }
+            &::after{
+                bottom: 35.5%;
+                transform:translateX(-50%) rotate(42deg);
+            }
+        }
     }
 }
 .position{

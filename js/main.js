@@ -1,3 +1,7 @@
+/*---------------------------------------------------------------------*/
+/*
+    adding the "Shown/Hidden" effect of the connect list
+*/
 [
     document.getElementById( 'connect-list__btn' ) ,
     document.getElementById('connect-list')
@@ -15,6 +19,9 @@
 });
 
 /*---------------------------------------------------------------------*/
+/*
+    adding the "Side-Scroll" mechanism of the Projects list
+*/
 let sectionProjects = document.getElementById('section-projects');
 let projs = new Projects(document.getElementsByClassName('project__card'));
 
@@ -27,3 +34,4 @@ document.addEventListener('keydown',(e)=>{
     }
     
 })
+/*---------------------------------------------------------------------*/

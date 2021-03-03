@@ -8,7 +8,7 @@ class Projects {
             else this.projs[i].classList.add('position-right-out');
         }
     }
-    moveLeft(){
+    moveRight(){
         let indexOfNextCard = this.projs.length - this.numOfCardsRightOut() ;
 
         if(indexOfNextCard < this.projs.length) 
@@ -27,7 +27,7 @@ class Projects {
         while(this.projs[i].classList.contains('position-right-out')==true) {i--;}
         return ((this.projs.length -1) - i);
     }
-    moveRight(){
+    moveLeft(){
         let indexOfNextCard = this.numOfCardsLeftOut() - 1;
         if(indexOfNextCard >= 0)
         {
