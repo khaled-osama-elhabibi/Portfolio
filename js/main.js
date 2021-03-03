@@ -13,3 +13,17 @@
         connect.classList.add('position-hidden');
     })           
 });
+
+/*---------------------------------------------------------------------*/
+let sectionProjects = document.getElementById('section-projects');
+let projs = new Projects(document.getElementsByClassName('project__card'));
+
+document.addEventListener('keydown',(e)=>{
+    if(e.code === 'ArrowRight'){
+        projs.moveRight();
+    }
+    else if(e.code === 'ArrowLeft'){
+        projs.moveLeft();
+    }
+    
+})

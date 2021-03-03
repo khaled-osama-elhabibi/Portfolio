@@ -21,7 +21,7 @@
             font-size: 2rem;
             align-self: flex-start;
         }
-        &__link{  &:link,&:visited{  color: $color-black;}}
+        &__link{  &:link,&:visited{  color: $color-dark-red;}}
         &__icon{
             font-size: 2.85rem;
             transition: all .2s;
@@ -35,5 +35,12 @@
             }
             &:active{  transform: translateX(8px) scale(1.3);}
         }
+    }
+}
+
+.logo-container{
+    text-align: center;
+    .logo{
+        display: inline-block;
     }
 }

@@ -1,0 +1,42 @@
+.section-projects{
+    background-color: $color-dark-red;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.project{
+    &__card{
+        display: inline-block;
+        height: 16rem;
+        width: 22rem;
+        margin: 5px;
+        background-color: $color-black;
+        position: absolute;
+        transition: all .4s;
+        box-shadow: 0rem 1rem 3rem rgba($color: $color-black, $alpha: .7) ;
+        
+        top:50%;
+    }
+}
+.position{
+    &-left{          
+        left: 0;        
+        transform: translateY(-50%) scale(.5);
+        &-out{
+            left:-25%;
+            transform: translateY(-50%) scale(.5);
+        }
+    }
+    &-main{          
+        left: 50%;      
+        transform: translateY(-50%) translateX( -50%) scale(1);
+    }
+    &-right{         
+        left: 100%;
+        transform: translateY(-50%) translateX(-100%)  scale(.5);
+        &-out{
+            left: 125%;
+            transform: translateY( -50%) scale(.5);
+        } 
+    }
+}
