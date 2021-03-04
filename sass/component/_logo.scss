@@ -1,0 +1,82 @@
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 552px;
+    display: inline-block;
+    &__element{
+        height: 10rem;
+        display: inline-block;
+        position: relative;
+        &--1{
+            transform: translateX(15px);
+            &::after{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%) rotate(90deg);
+
+                display: inline-block;
+                content: '';
+                width: 10rem;
+                border-top: 10px solid $color-dark-red;
+            }
+        }
+        &--2{
+            transform: translateX(65px);
+            &::after,&::before{
+                position: absolute;
+                left: 50%;
+                display: inline-block;
+                content: '';
+                width: 7.2rem;
+                border-top: 15px solid $color-dark-red;
+            }
+            &::after{               
+                top: 73%;
+                transform: translate(-50%,-50%) rotate(45deg);
+            }
+            &::before{               
+                top: 27%;
+                transform: translate(-50%,-50%) rotate(-45deg);
+            }
+            &--rotate{
+                transform: translateX(485px) rotate(180deg);
+                &::after,&::before{
+                    border-top: 15px solid $color-black;
+                }
+            }
+        }
+        &--3{
+            transform: translateX(225px);
+            &::after{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                display: inline-block;
+                content: 'haled';
+                font-family: 'Gabriela', serif;
+                letter-spacing: 25px;
+                font-size: 3.7rem;
+                background-image: linear-gradient(to right , $color-dark-red , $color-black);
+                color:transparent;
+                -webkit-background-clip: text;
+            }
+        }
+        &--4{transform: translateX(382px);
+            &::after{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%) rotate(297deg);
+                display: inline-block;
+                width: 176px;
+                content: '';
+                border-top: 10px solid $color-black;
+
+            }
+        }
+    }
+}

@@ -4,20 +4,21 @@
 .hidden {
   visibility: hidden; }
 
-.header-section {
-  height: 100vh;
-  position: relative; }
-
 .position-hidden {
   left: -3rem; }
 
 .position-shown {
   left: 0rem; }
 
+.header-section {
+  height: 100vh;
+  position: relative;
+  font-size: 2rem; }
+
 .connect {
   width: 18rem;
   position: absolute;
-  top: 5rem;
+  top: 20%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -50,10 +51,41 @@
       .connect-list__icon:active {
         transform: translateX(8px) scale(1.3); }
 
-.logo-container {
-  text-align: center; }
-  .logo-container .logo {
-    display: inline-block; }
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  transform: translateY(-50%);
+  right: -20px;
+  transition: all .3s;
+  padding: 5px 25px 5px 10px; }
+  .btn-project {
+    top: 25%; }
+  .btn-about {
+    top: 50%; }
+  .btn-skills {
+    top: 75%; }
+  .btn .arrow {
+    position: relative; }
+    .btn .arrow::before, .btn .arrow::after {
+      display: inline-block;
+      content: '';
+      width: 17px;
+      border-top: 3px solid #8b0000;
+      position: absolute;
+      left: 5px; }
+    .btn .arrow::before {
+      transform: rotate(45deg);
+      top: 40%; }
+    .btn .arrow::after {
+      transform: rotate(-45deg);
+      bottom: 24%; }
+  .btn:hover {
+    right: 5px;
+    color: #fff;
+    background-color: #8b0000; }
+    .btn:hover .arrow::after, .btn:hover .arrow::before {
+      border-top: 3px solid #fff; }
 
 .section-projects {
   background-color: #8b0000;
@@ -154,3 +186,71 @@ body {
     .navigation-btn--left:active {
       transform: scale(0.65) translateY(-54%) rotate(180deg);
       box-shadow: 0 -0.75rem 4rem rgba(0, 0, 0, 0.7); }
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 552px;
+  display: inline-block; }
+  .logo__element {
+    height: 10rem;
+    display: inline-block;
+    position: relative; }
+    .logo__element--1 {
+      transform: translateX(15px); }
+      .logo__element--1::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        display: inline-block;
+        content: '';
+        width: 10rem;
+        border-top: 10px solid #8b0000; }
+    .logo__element--2 {
+      transform: translateX(65px); }
+      .logo__element--2::after, .logo__element--2::before {
+        position: absolute;
+        left: 50%;
+        display: inline-block;
+        content: '';
+        width: 7.2rem;
+        border-top: 15px solid #8b0000; }
+      .logo__element--2::after {
+        top: 73%;
+        transform: translate(-50%, -50%) rotate(45deg); }
+      .logo__element--2::before {
+        top: 27%;
+        transform: translate(-50%, -50%) rotate(-45deg); }
+      .logo__element--2--rotate {
+        transform: translateX(485px) rotate(180deg); }
+        .logo__element--2--rotate::after, .logo__element--2--rotate::before {
+          border-top: 15px solid #000; }
+    .logo__element--3 {
+      transform: translateX(225px); }
+      .logo__element--3::after {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        content: 'haled';
+        font-family: 'Gabriela', serif;
+        letter-spacing: 25px;
+        font-size: 3.7rem;
+        background-image: linear-gradient(to right, #8b0000, #000);
+        color: transparent;
+        -webkit-background-clip: text; }
+    .logo__element--4 {
+      transform: translateX(382px); }
+      .logo__element--4::after {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(297deg);
+        display: inline-block;
+        width: 176px;
+        content: '';
+        border-top: 10px solid #000; }
