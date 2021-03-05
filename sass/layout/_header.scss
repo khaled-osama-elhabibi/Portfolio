@@ -2,6 +2,7 @@
     height: 100vh;
     position: relative;
     font-size: 2rem; 
+    overflow: hidden;
 }
 .connect{
     width:18rem;
@@ -67,7 +68,7 @@
         }
     }
     &:hover{
-        right: 5px;
+        right: 4px;
         color: $color-white;
         background-color: $color-dark-red;
         & .arrow{

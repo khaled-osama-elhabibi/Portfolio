@@ -13,7 +13,8 @@
 .header-section {
   height: 100vh;
   position: relative;
-  font-size: 2rem; }
+  font-size: 2rem;
+  overflow: hidden; }
 
 .connect {
   width: 18rem;
@@ -81,7 +82,7 @@
       transform: rotate(-45deg);
       bottom: 24%; }
   .btn:hover {
-    right: 5px;
+    right: 4px;
     color: #fff;
     background-color: #8b0000; }
     .btn:hover .arrow::after, .btn:hover .arrow::before {
