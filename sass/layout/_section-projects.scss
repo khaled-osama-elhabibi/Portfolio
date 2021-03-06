@@ -9,8 +9,6 @@
     bottom: 0;
     height: 70vh;
     width: 100vw;
-}
-.project{
     &__card{
         border-radius: 8px; 
         display: inline-block;
@@ -22,27 +20,25 @@
         transition: all .4s;
         box-shadow: 0rem 1rem 3rem rgba($color: $color-black, $alpha: .7) ;
         top:50%;
-    }
-}
-.position{
-    &-left{          
-        left: 0;        
-        transform: translateY(-50%) scale(.5);
-        &-out{
-            left:-45%;
+        &--left{          
+            left: 0;        
             transform: translateY(-50%) scale(.5);
+            &-out{
+                left:-45%;
+                transform: translateY(-50%) scale(.5);
+            }
         }
-    }
-    &-main{          
-        left: 50%;      
-        transform: translateY(-50%) translateX( -50%) scale(1);
-    }
-    &-right{         
-        left: 100%;
-        transform: translateY(-50%) translateX(-104%)  scale(.5);
-        &-out{
-            left: 125%;
-            transform: translateY( -50%) scale(.5);
-        } 
+        &--main{          
+            left: 50%;      
+            transform: translateY(-50%) translateX( -50%) scale(1);
+        }
+        &--right{         
+            left: 100%;
+            transform: translateY(-50%) translateX(-104%)  scale(.5);
+            &-out{
+                left: 125%;
+                transform: translateY( -50%) scale(.5);
+            } 
+        }    
     }
 }

@@ -23,7 +23,7 @@
     adding the "Side-Scroll" mechanism of the Projects list
 */
 let sectionProjects = document.getElementById('section-projects');
-let projs = new Projects(document.getElementsByClassName('project__card'));
+let projs = new Projects(document.getElementsByClassName('projects__card'));
 
 let btnRight = document.getElementById('btn-right');
 btnRight.classList.add('visible')
