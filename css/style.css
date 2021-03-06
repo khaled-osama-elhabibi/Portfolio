@@ -42,7 +42,7 @@
   flex-direction: row;
   justify-content: space-between;
   transition: all .4s;
-  animation: right-entrance .9s 2.7s backwards; }
+  animation: right-entrance .9s 4.2s backwards; }
   .connect-list {
     list-style: none; }
     .connect-list__btn {
@@ -102,13 +102,13 @@
       border-top: 3px solid #fff; }
   .btn--project {
     top: 25%;
-    animation: left-entrance 0.9s cubic-bezier(0.49, 0.45, 0.63, 1.39) backwards; }
+    animation: left-entrance 0.9s cubic-bezier(0.49, 0.45, 0.63, 1.39) 1.1s backwards; }
   .btn--about {
     top: 50%;
-    animation: left-entrance 0.9s cubic-bezier(0.49, 0.45, 0.63, 1.39) 0.9s backwards; }
+    animation: left-entrance 0.9s cubic-bezier(0.49, 0.45, 0.63, 1.39) 2s backwards; }
   .btn--skills {
     top: 75%;
-    animation: left-entrance 0.9s cubic-bezier(0.49, 0.45, 0.63, 1.39) 1.8s backwards; }
+    animation: left-entrance 0.9s cubic-bezier(0.49, 0.45, 0.63, 1.39) 3.1s backwards; }
 
 .section-projects {
   background-color: #8b0000;
