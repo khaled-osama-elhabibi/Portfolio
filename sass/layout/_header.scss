@@ -6,7 +6,7 @@
     left: 0;
     top: 0;
     overflow: hidden;
-    transition: all 6s;
+    transition: all 1s;
 }
 .connect{
     width:18rem;
@@ -16,6 +16,7 @@
     flex-direction: row;
     justify-content: space-between;
     transition: all .4s;
+    animation: right-entrance .9s 2.7s backwards;
     &-list{
         list-style: none;
         &__btn{
@@ -78,8 +79,8 @@
             }
         }
     }
-    &--project{top: 25%;}
-    &--about{top: 50%;}
-    &--skills{top: 75%;}
+    &--project{top: 25%; animation: left-entrance .9s cubic-bezier(.49,.45,.63,1.39) backwards; }
+    &--about{top: 50%; animation: left-entrance .9s cubic-bezier(.49,.45,.63,1.39) .9s backwards;}
+    &--skills{top: 75%; animation: left-entrance .9s cubic-bezier(.49,.45,.63,1.39) 1.8s backwards;}
+    
 }
-

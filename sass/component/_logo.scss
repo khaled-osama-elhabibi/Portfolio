@@ -1,15 +1,41 @@
+@keyframes animate-logo-elem-1{
+    0% {transform: translateX(-90px) ; opacity: 0;}
+    100%{transform: translateX(15px) ; opacity: 1;}
+}
+@keyframes animate-logo-elem-2{
+    0% {transform: translateX(160px) ;}
+    100%{transform: translateX(65px) ;}
+}
+@keyframes animate-logo-elem-3{
+    0% {transform: translateX(225px)  translateY(-115px) ; opacity: 0;}
+    100%{transform: translateX(225px)  translateY(0px) ; opacity: 1;}
+}
+
+@keyframes animate-logo-elem-2-rotate{
+    0% {transform: translateX(330px) rotate(180deg);}
+    100%{transform: translateX(485px) rotate(180deg);;}
+}
+@keyframes animate-logo-elem-4{
+    0% {transform: translateX(240px) ;}
+    100%{ transform: translateX(382px); ;}
+}
+@keyframes animate-logo-elem-5{
+    0% {transform: translate( 55px , 120px ) ; opacity: 0;}
+    100%{transform: translate( 55px , 55px ) ; opacity: 1;}
+}
 .logo{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 552px;
+    width: 568px;
     display: inline-block;
     &__element{
-        height: 10rem;
+        height: 160px;
         display: inline-block;
         position: relative;
         &--1{
+            animation: animate-logo-elem-1 .4s .7s ease-in-out backwards ;
             transform: translateX(15px);
             &::after{
                 position: absolute;
@@ -19,11 +45,12 @@
 
                 display: inline-block;
                 content: '';
-                width: 10rem;
+                width: 160px;
                 border-top: 10px solid $color-dark-red;
             }
         }
         &--2{
+            animation: animate-logo-elem-2 .5s .2s ease-in-out backwards ;
             transform: translateX(65px);
             &::after,&::before{
                 position: absolute;
@@ -42,6 +69,7 @@
                 transform: translate(-50%,-50%) rotate(-45deg);
             }
             &--rotate{
+                animation: animate-logo-elem-2-rotate .5s .2s ease-in-out backwards ;
                 transform: translateX(485px) rotate(180deg);
                 &::after,&::before{
                     border-top: 15px solid $color-black;
@@ -49,23 +77,27 @@
             }
         }
         &--3{
+            animation: animate-logo-elem-3 .4s .7s ease-in-out backwards ;
             transform: translateX(225px);
+            animation: name duration timing-function delay iteration-count direction fill-mode;
             &::after{
+                display: inline-block;
+                content: 'haled';
+                font-family: 'Gabriela', serif;
+                letter-spacing: 27px;
+                font-size: 59px;
+                background-image: linear-gradient(to right , $color-dark-red , $color-black);
+                color:transparent;
+                -webkit-background-clip: text;
                 position: absolute;
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%,-50%);
-                display: inline-block;
-                content: 'haled';
-                font-family: 'Gabriela', serif;
-                letter-spacing: 25px;
-                font-size: 3.7rem;
-                background-image: linear-gradient(to right , $color-dark-red , $color-black);
-                color:transparent;
-                -webkit-background-clip: text;
             }
         }
-        &--4{transform: translateX(382px);
+        &--4{
+            animation: animate-logo-elem-4 .5s .2s ease-in-out backwards;
+            transform: translateX(382px);
             &::after{
                 position: absolute;
                 left: 50%;
@@ -76,6 +108,20 @@
                 content: '';
                 border-top: 10px solid $color-black;
 
+            }
+        }
+        &--5{
+            animation: animate-logo-elem-5 .4s .7s ease-in-out backwards ;
+            transform: translate(55px,55px);
+            &::after{
+                display: inline-block;
+                content: 'Osama';
+                font-family: 'Gabriela', serif;
+                letter-spacing: 27px;
+                font-size: 59px;
+                background-image: linear-gradient(to right , $color-black , $color-dark-red);
+                color:transparent;
+                -webkit-background-clip: text;
             }
         }
     }

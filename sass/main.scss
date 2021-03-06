@@ -1,5 +1,6 @@
 @import "sass/abstract/variables" ;
 @import "sass/abstract/utilities" ;
+@import "sass/abstract/animation";
 
 @import "sass/layout/header" ;
 @import "sass/layout/section-projects" ;
@@ -7,4 +8,4 @@
 @import "sass/base/base" ;
 
 @import "sass/component/navigation-btn" ;  
-@import "sass/component/logo" ; 
+@import "sass/component/logo" ;  
