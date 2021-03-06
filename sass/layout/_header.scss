@@ -1,8 +1,12 @@
 .header-section{
     height: 100vh;
-    position: relative;
+    width: 100vw;
     font-size: 2rem; 
+    position: absolute;
+    left: 0;
+    top: 0;
     overflow: hidden;
+    transition: all 6s;
 }
 .connect{
     width:18rem;

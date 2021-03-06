@@ -50,3 +50,19 @@ document.addEventListener('keydown',(e)=>{
 /*
     adding the "slide from right" mechanism to the projects section
 */
+let header = document.getElementById('section-header') ;
+let projects = document.getElementById('section-projects') ;
+
+let projectsBtn = document.getElementById('project-btn') ;
+let aboutBtn = document.getElementById('about-btn') ;
+let formBtn = document.getElementById('form-btn') ;
+
+projectsBtn.addEventListener('click',()=>{
+    header.style.left = '-100vw';
+    projects.style.left = '0';
+})
+
+function showHeader(){
+    projects.style.left = '100vw';
+    header.style.left = '0';
+}

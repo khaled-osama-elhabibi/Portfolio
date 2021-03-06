@@ -12,9 +12,13 @@
 
 .header-section {
   height: 100vh;
-  position: relative;
+  width: 100vw;
   font-size: 2rem;
-  overflow: hidden; }
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  transition: all 6s; }
 
 .connect {
   width: 18rem;
@@ -91,8 +95,12 @@
 .section-projects {
   background-color: #8b0000;
   height: 100vh;
-  position: relative;
-  overflow: hidden; }
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+  transition: all 6s;
+  top: 0;
+  left: 100vw; }
 
 .projects {
   position: absolute;
@@ -133,8 +141,10 @@
   padding: 0; }
 
 body {
+  position: relative;
   font-size: 10px;
-  color: #8b0000; }
+  color: #8b0000;
+  overflow: hidden; }
 
 .navigation-btn {
   cursor: pointer;

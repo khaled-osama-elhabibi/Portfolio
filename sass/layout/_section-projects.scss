@@ -1,8 +1,12 @@
 .section-projects{
     background-color: $color-dark-red;
     height: 100vh;
-    position: relative;
+    width: 100vw;
+    position: absolute;
     overflow: hidden;
+    transition: all 6s;
+    top: 0;
+    left: 100vw;
 }
 .projects{
     position: absolute;
