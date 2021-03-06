@@ -43,9 +43,6 @@
     position: absolute;
     transform: translateY(-050%);
     right: -20px;
-    &-project{top: 25%;}
-    &-about{top: 50%;}
-    &-skills{top: 75%;}
     transition: all .3s;
     padding: 5px 25px 5px 10px;
     .arrow{
@@ -68,7 +65,7 @@
         }
     }
     &:hover{
-        right: 4px;
+        right: -1px;
         color: $color-white;
         background-color: $color-dark-red;
         & .arrow{
@@ -77,5 +74,8 @@
             }
         }
     }
+    &--project{top: 25%;}
+    &--about{top: 50%;}
+    &--skills{top: 75%;}
 }
 

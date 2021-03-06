@@ -47,3 +47,6 @@ document.addEventListener('keydown',(e)=>{
     
 })
 /*---------------------------------------------------------------------*/
+/*
+    adding the "slide from right" mechanism to the projects section
+*/

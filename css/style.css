@@ -60,12 +60,6 @@
   right: -20px;
   transition: all .3s;
   padding: 5px 25px 5px 10px; }
-  .btn-project {
-    top: 25%; }
-  .btn-about {
-    top: 50%; }
-  .btn-skills {
-    top: 75%; }
   .btn .arrow {
     position: relative; }
     .btn .arrow::before, .btn .arrow::after {
@@ -82,11 +76,17 @@
       transform: rotate(-45deg);
       bottom: 24%; }
   .btn:hover {
-    right: 4px;
+    right: -1px;
     color: #fff;
     background-color: #8b0000; }
     .btn:hover .arrow::after, .btn:hover .arrow::before {
       border-top: 3px solid #fff; }
+  .btn--project {
+    top: 25%; }
+  .btn--about {
+    top: 50%; }
+  .btn--skills {
+    top: 75%; }
 
 .section-projects {
   background-color: #8b0000;
