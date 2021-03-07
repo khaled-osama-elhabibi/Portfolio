@@ -52,15 +52,25 @@ document.addEventListener('keydown',(e)=>{
 */
 let header = document.getElementById('section-header') ;
 let projects = document.getElementById('section-projects') ;
+let about = document.getElementById('section-about') ;
 
 let projectsBtn = document.getElementById('project-btn') ;
 let aboutBtn = document.getElementById('about-btn') ;
 let formBtn = document.getElementById('form-btn') ;
 
+
+aboutBtn.addEventListener('click',()=>{
+    header.style.left = '-100vw';
+    about.style.left = '0';
+})
+
+
 projectsBtn.addEventListener('click',()=>{
     header.style.left = '-100vw';
     projects.style.left = '0';
 })
+
+
 
 function showHeader(){
     projects.style.left = '100vw';

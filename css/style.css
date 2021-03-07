@@ -27,12 +27,12 @@
 .header-section {
   height: 100vh;
   width: 100vw;
-  font-size: 2rem;
   position: absolute;
+  overflow: hidden;
+  transition: all 1s;
   left: 0;
   top: 0;
-  overflow: hidden;
-  transition: all 1s; }
+  font-size: 2rem; }
 
 .connect {
   width: 18rem;
@@ -42,7 +42,7 @@
   flex-direction: row;
   justify-content: space-between;
   transition: all .4s;
-  animation: right-entrance .9s 4.2s backwards; }
+  animation: right-entrance .9s 2s backwards; }
   .connect-list {
     list-style: none; }
     .connect-list__btn {
@@ -105,20 +105,20 @@
     animation: left-entrance 0.9s cubic-bezier(0.49, 0.45, 0.63, 1.39) 1.1s backwards; }
   .btn--about {
     top: 50%;
-    animation: left-entrance 0.9s cubic-bezier(0.49, 0.45, 0.63, 1.39) 2s backwards; }
+    animation: left-entrance 0.9s cubic-bezier(0.49, 0.45, 0.63, 1.39) 1.1s backwards; }
   .btn--skills {
     top: 75%;
-    animation: left-entrance 0.9s cubic-bezier(0.49, 0.45, 0.63, 1.39) 3.1s backwards; }
+    animation: left-entrance 0.9s cubic-bezier(0.49, 0.45, 0.63, 1.39) 1.1s backwards; }
 
 .section-projects {
-  background-color: #8b0000;
   height: 100vh;
   width: 100vw;
   position: absolute;
   overflow: hidden;
   transition: all 1s;
   top: 0;
-  left: 100vw; }
+  left: 100vw;
+  background-color: #8b0000; }
 
 .projects {
   position: absolute;
@@ -151,6 +151,22 @@
       .projects__card--right-out {
         left: 125%;
         transform: translateY(-50%) scale(0.5); }
+
+.section-about {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+  transition: all 1s;
+  top: 0;
+  left: 100vw;
+  font-size: 2rem;
+  background-color: #8b0000;
+  color: #000; }
+
+.skills__tech, .skills__soft {
+  display: inline-block;
+  list-style: none; }
 
 *,
 *::after,
@@ -258,7 +274,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.5);
   width: 568px;
   display: inline-block; }
   .logo__element {

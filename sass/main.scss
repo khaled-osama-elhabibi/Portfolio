@@ -1,9 +1,11 @@
 @import "sass/abstract/variables" ;
 @import "sass/abstract/utilities" ;
 @import "sass/abstract/animation";
-
+@import "sass/abstract/mixins";
+     
 @import "sass/layout/header" ;
 @import "sass/layout/section-projects" ;
+@import "sass/layout/section-about";
 
 @import "sass/base/base" ;
 
