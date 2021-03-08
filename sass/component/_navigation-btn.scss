@@ -1,14 +1,14 @@
 .navigation-btn{
     cursor: pointer;
-    width: 5rem;
     height: 5rem;
+    width: 5rem;
     position: absolute;
     top: 50%;
     border: none;
     background-color: transparent;
     border-radius: 50%;
     transition: all .4s;
-    &::after,&::before{
+    &::after,&::before{ 
         display: inline-block;
         content: '';
         width: 2rem;

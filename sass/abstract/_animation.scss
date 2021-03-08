@@ -1,19 +1,9 @@
 @keyframes left-entrance{
-    0%{
-        right: -140px;
-    }
-    75%{
-        right: 7px;
-    }
-    100%{
-        right: -20px;
-    }
+    0%{        right: -140px;    }
+    75%{        right: 7px;    }
+    100%{        right: -20px;    }
 }
 @keyframes right-entrance{
-    0%{
-        left: -19rem;
-    }
-    100%{
-        left: -3rem;
-    }
+    0%{        left: -19rem;    }
+    100%{        left: -3rem;    }
 }

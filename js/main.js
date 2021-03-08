@@ -62,7 +62,7 @@ let formBtn = document.getElementById('form-btn') ;
 aboutBtn.addEventListener('click',()=>{
     header.style.left = '-100vw';
     about.style.left = '0';
-})
+}) 
 
 
 projectsBtn.addEventListener('click',()=>{

@@ -6,7 +6,7 @@ class Projects {
             if(i===0) this.projs[i].classList.add('projects__card--main');
             else if (i===1) this.projs[i].classList.add('projects__card--right');
             else this.projs[i].classList.add('projects__card--right-out');
-        }
+        } 
     }
     moveRight(btnRight,btnLeft){
         let indexOfNextCard = this.projs.length - this.numOfCardsRightOut() ;

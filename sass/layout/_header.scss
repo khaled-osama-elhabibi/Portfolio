@@ -12,8 +12,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    transition: all .4s;
     animation: right-entrance .9s 2s backwards;
+    transition: all .4s;
     &-list{
         list-style: none;
         &__btn{

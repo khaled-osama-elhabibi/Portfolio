@@ -5,14 +5,14 @@
     
     background-color: $color-dark-red;
 }
-.projects{
+.projects{ 
     position: absolute;
     bottom: 0;
     height: 70vh;
     width: 100vw;
     &__card{
-        border-radius: 8px; 
         display: inline-block;
+        border-radius: 8px; 
         height: 16rem;
         width: 22rem;
         margin: 5px;

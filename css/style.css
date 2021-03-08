@@ -4,11 +4,11 @@
 .hidden {
   visibility: hidden; }
 
-.position-hidden {
-  left: -3rem; }
-
 .position-shown {
   left: 0rem; }
+
+.position-hidden {
+  left: -3rem; }
 
 @keyframes left-entrance {
   0% {
@@ -27,8 +27,8 @@
 .header-section {
   height: 100vh;
   width: 100vw;
-  position: absolute;
   overflow: hidden;
+  position: absolute;
   transition: all 1s;
   left: 0;
   top: 0;
@@ -41,8 +41,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  transition: all .4s;
-  animation: right-entrance .9s 2s backwards; }
+  animation: right-entrance .9s 2s backwards;
+  transition: all .4s; }
   .connect-list {
     list-style: none; }
     .connect-list__btn {
@@ -113,8 +113,8 @@
 .section-projects {
   height: 100vh;
   width: 100vw;
-  position: absolute;
   overflow: hidden;
+  position: absolute;
   transition: all 1s;
   top: 0;
   left: 100vw;
@@ -126,8 +126,8 @@
   height: 70vh;
   width: 100vw; }
   .projects__card {
-    border-radius: 8px;
     display: inline-block;
+    border-radius: 8px;
     height: 16rem;
     width: 22rem;
     margin: 5px;
@@ -155,8 +155,8 @@
 .section-about {
   height: 100vh;
   width: 100vw;
-  position: absolute;
   overflow: hidden;
+  position: absolute;
   transition: all 1s;
   top: 0;
   left: 100vw;
@@ -171,62 +171,14 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 body {
   position: relative;
   font-size: 10px;
   color: #8b0000;
   overflow: hidden; }
-
-.navigation-btn {
-  cursor: pointer;
-  width: 5rem;
-  height: 5rem;
-  position: absolute;
-  top: 50%;
-  border: none;
-  background-color: transparent;
-  border-radius: 50%;
-  transition: all .4s; }
-  .navigation-btn::after, .navigation-btn::before {
-    display: inline-block;
-    content: '';
-    width: 2rem;
-    border-top: 5px solid #000;
-    position: absolute;
-    left: 50%; }
-  .navigation-btn::before {
-    top: 35.5%;
-    transform: translateX(-50%) rotate(42deg); }
-  .navigation-btn::after {
-    bottom: 35.5%;
-    transform: translateX(-50%) rotate(-42deg); }
-  .navigation-btn:focus {
-    outline: none; }
-  .navigation-btn:active, .navigation-btn:hover {
-    background-color: #000; }
-    .navigation-btn:active::after, .navigation-btn:active::before, .navigation-btn:hover::after, .navigation-btn:hover::before {
-      border-top: 5px solid #8b0000; }
-  .navigation-btn--right {
-    transform: scale(0.65) translateY(-50%) rotate(0deg);
-    right: 1rem; }
-    .navigation-btn--right:hover {
-      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.7);
-      transform: scale(0.65) translateY(-65%) rotate(0deg); }
-    .navigation-btn--right:active {
-      transform: scale(0.65) translateY(-54%) rotate(0deg);
-      box-shadow: 0 0.75rem 4rem rgba(0, 0, 0, 0.7); }
-  .navigation-btn--left {
-    transform: scale(0.65) translateY(-50%) rotate(180deg);
-    left: 1rem; }
-    .navigation-btn--left:hover {
-      box-shadow: 0 -1.5rem 4rem rgba(0, 0, 0, 0.7);
-      transform: scale(0.65) translateY(-65%) rotate(180deg); }
-    .navigation-btn--left:active {
-      transform: scale(0.65) translateY(-54%) rotate(180deg);
-      box-shadow: 0 -0.75rem 4rem rgba(0, 0, 0, 0.7); }
 
 @keyframes animate-logo-elem-1 {
   0% {
@@ -272,8 +224,8 @@ body {
 
 .logo {
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 568px;
   display: inline-block; }
@@ -355,3 +307,51 @@ body {
         background-image: linear-gradient(to right, #000, #8b0000);
         color: transparent;
         -webkit-background-clip: text; }
+
+.navigation-btn {
+  cursor: pointer;
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  top: 50%;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: all .4s; }
+  .navigation-btn::after, .navigation-btn::before {
+    display: inline-block;
+    content: '';
+    width: 2rem;
+    border-top: 5px solid #000;
+    position: absolute;
+    left: 50%; }
+  .navigation-btn::before {
+    top: 35.5%;
+    transform: translateX(-50%) rotate(42deg); }
+  .navigation-btn::after {
+    bottom: 35.5%;
+    transform: translateX(-50%) rotate(-42deg); }
+  .navigation-btn:focus {
+    outline: none; }
+  .navigation-btn:active, .navigation-btn:hover {
+    background-color: #000; }
+    .navigation-btn:active::after, .navigation-btn:active::before, .navigation-btn:hover::after, .navigation-btn:hover::before {
+      border-top: 5px solid #8b0000; }
+  .navigation-btn--right {
+    transform: scale(0.65) translateY(-50%) rotate(0deg);
+    right: 1rem; }
+    .navigation-btn--right:hover {
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.7);
+      transform: scale(0.65) translateY(-65%) rotate(0deg); }
+    .navigation-btn--right:active {
+      transform: scale(0.65) translateY(-54%) rotate(0deg);
+      box-shadow: 0 0.75rem 4rem rgba(0, 0, 0, 0.7); }
+  .navigation-btn--left {
+    transform: scale(0.65) translateY(-50%) rotate(180deg);
+    left: 1rem; }
+    .navigation-btn--left:hover {
+      box-shadow: 0 -1.5rem 4rem rgba(0, 0, 0, 0.7);
+      transform: scale(0.65) translateY(-65%) rotate(180deg); }
+    .navigation-btn--left:active {
+      transform: scale(0.65) translateY(-54%) rotate(180deg);
+      box-shadow: 0 -0.75rem 4rem rgba(0, 0, 0, 0.7); }
