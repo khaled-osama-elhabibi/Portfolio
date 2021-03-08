@@ -274,7 +274,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%);
   width: 568px;
   display: inline-block; }
   .logo__element {
