@@ -1,18 +1,100 @@
 .section-about{
     @include section-setup;
-    top: 0;
-    left: 100vw;
-    font-size: 2rem;
-    background-color: $color-dark-red;
+    font-size: 1rem;
+    background-color:  $color-dark-red;
     color: $color-black;
 } 
+.welcome-card{
+    width: 75%;
+    height: 30%;
+    border-radius: 10px ;
+    margin: 1% auto;
+    box-shadow: 0rem 1rem 4rem rgba($color-black, .7);
+    padding: 25px;
+    display: flex;
+    flex-flow: row ;
+    align-items: center;
+    &__developer-photo{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 74%;
+        margin-right: 25px;
+    }
+    &__greeting{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &__summary{
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        line-height: 25px;
+    }
+}
 .skills{
-    &__tech , &__soft{
-        display: inline-block;
-        list-style: none ;
+    &-container{
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
     }
-    &__tech{
+    min-width:464px;
+    transition: all .5s;
+    list-style: none;
+    padding: 20px;
+    display: inline-block;
+    width: fit-content;
+    margin: 0;
+    background-color: $color-black;
+    color: $color-dark-red;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0rem 1rem 4rem rgba($color-black, .7);
+
+    &__tech{ margin-right: 5%;
 
     }
+    &__soft{ text-align: center;
 
+    }
+    &__item{
+        min-height: 54px;
+        &:not(:last-child){
+            margin-bottom: 5px;
+        }
+        &-ind{
+            display: inline-block ;
+            height: 20px ; 
+            &-unit{
+                display: inline-block;
+                width: 30px;
+                margin-right: 7px;
+                height: 13px;
+                transform: skewX(-38deg);
+                background-color: $color-tertinary;
+                &-fill{
+                    width: 100%;
+                    height: 100%;
+                    transition: all .3s;
+                    background-color: $color-dark-red; 
+            
+                }
+            }   
+        }
+    }
+} 
+@keyframes animate-1{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.animated-1{
+    animation: animate-1 .5s ;
 }

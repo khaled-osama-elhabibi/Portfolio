@@ -1,0 +1,38 @@
+.section-header{
+    @include section-setup ;
+}
+.connect{
+    font-size: 2rem; 
+    width:18rem;
+    position: absolute;
+    top:22%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    animation: right-entrance .9s 2s backwards;
+    transition: all .4s;
+    &-list{
+        list-style: none;
+        &__btn{
+            width: 16rem;
+            text-align: center;
+            display: inline-block;
+            font-size: 2rem;
+            align-self: flex-start;
+        }
+        &__link{  &:link,&:visited{  color: $color-dark-red;}}
+        &__icon{
+            font-size: 2.85rem;
+            transition: all .2s;
+            &:hover{
+                transform: translateX(10px) scale(1.3);
+                &.fa-facebook-square{  color: $color-facebook;}
+                &.fa-twitter-square{  color: $color-twitter;}
+                &.fa-linkedin{  color: $color-linkedin;}
+                &.fa-github-square{  color: $color-github;}
+                &.fa-instagram-square{  color: $color-instagram;}
+            }
+            &:active{  transform: translateX(8px) scale(1.3);}
+        }
+    }
+}

@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <header id='section-header' class="header-section">
+    <header id = 'section-header' class = 'section-header' style="top:0; left:0;z-index: 10;">
         <div class="logo">
             <div class="logo__element logo__element--1"></div>
             <div class="logo__element logo__element--2"></div>
@@ -28,7 +28,7 @@
         <div id="connect" class="connect position-hidden">
             <ul id="connect-list" class="connect-list">
                 <li class="connect-list__item">   
-                    <a href="#" class="connect-list__link">
+                    <a href="https://www.facebook.com/KhaledOsamaElhabibi" target="_blank" class="connect-list__link">
                         <i id="facebook" class="connect-list__icon fab fa-facebook-square"></i>
                     </a>
                 </li>
@@ -55,13 +55,9 @@
             </ul>
             <span id='connect-list__btn' class="connect-list__btn">Let's get in touch</span>    
         </div>
-
-        <div id="project-btn" class="btn btn--project">Projects <span class = 'arrow'></span></div>
-        <div id="about-btn" class="btn btn--about">About <span class = 'arrow'></span></div>
-        <div id="form-btn" class="btn btn--skills">Form <span class = 'arrow'></span></div>
         
     </header>
-    <section id = 'section-projects' class='section-projects'>
+    <section id = 'section-projects' class = 'section-projects' style="top:0; left:100vw;z-index: 1;">
         <div class="projects">
             <div class="projects__card">card1</div>
             <div class="projects__card">card1</div>
@@ -72,42 +68,39 @@
             <div class="projects__card">card3</div>
             <div class="projects__card">card3</div>
             <div class="projects__card">card3</div>
-            <button id='btn-right' class='navigation-btn navigation-btn--right'>            </button>
-            <button id='btn-left' class='navigation-btn navigation-btn--left'>            </button> 
+            <button id='project-navigation-btn--right' class='project-navigation-btn project-navigation-btn--right'>            </button>
+            <button id='project-navigation-btn--left' class='project-navigation-btn project-navigation-btn--left'>            </button> 
         </div>
+   
     </section>
 
-    <section id = 'section-about' class = 'section-about'>
-        <h1 class="greeting">Hi, I’m Khaled. Nice to meet you.</h1>
-        <h2 class="summary">
-            I’m a creative & dedicated front end developer with an experience in developing & designing 
-            responsive websites. I am looking for a challenging position in a leading company or Institution,
-            where I can put my knowledge and skills into practice, achieve more progress and success and 
-            make significant contributions.   
-        </h2>
-        <div class="skills">
-            <ul class="skills__tech">
-                <li class="skills__item">HTML</li>
-                <li class="skills__item">CSS</li>
-                <li class="skills__item">Javascript</li>
-                <li class="skills__item">React.JS</li>
-                <li class="skills__item">Sass</li>
-                <li class="skills__item">Git/Github</li>
-            </ul> 
-            <ul class="skills__soft">
-                <li class="skills__item">Communication</li>
-                <li class="skills__item">teamwork</li>
-                <li class="skills__item">critical thinking</li>
-                <li class="skills__item">proactive</li>
-                <li class="skills__item">hard working</li>
-                <li class="skills__item">quick learning</li>
-            </ul>
-        </div> 
+    <section id = 'section-about' class = 'section-about' style="top:0; left:100vw;z-index: 1;">
+               
+        <div class="welcome-card">
+            <img class="welcome-card__developer-photo" src="imgs/main-img.jpg" alt="Khaled Osama">
+            <div class="welcome-card__text"> 
+                <h1 class="welcome-card__greeting">Hi, I’m Khaled. Nice to meet you.</h1>
+                <h2 class="welcome-card__summary">
+                    I’m a creative & dedicated front end developer with an experience in developing & designing 
+                    responsive websites. I am looking for a challenging position in a leading company or Institution,
+                    where I can put my knowledge and skills into practice, achieve more progress and success and 
+                    make significant contributions.       
+                </h2>
+            </div>
+        </div>
+
+        <div id="skills-container" class="skills-container"></div>
+        
     </section>
+
+    <section id='section-contact' class = 'section-contact' style="top:0; left:100vw;z-index: 1;"></section>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/skills-list.js"></script>
     <script src="js/projects.js"></script>
     <script src="js/main.js"></script>
     
     
-
+    
 </body>
 </html>

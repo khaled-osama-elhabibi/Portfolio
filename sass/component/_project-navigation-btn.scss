@@ -1,4 +1,4 @@
-.navigation-btn{
+.project-navigation-btn{
     cursor: pointer;
     height: 5rem;
     width: 5rem;
@@ -13,7 +13,7 @@
         content: '';
         width: 2rem;
         border-top: 5px solid $color-black;
-        position: absolute;
+        position: absolute; 
         left: 50%;
     }
     &::before{
@@ -54,7 +54,6 @@
         &:active{
             transform: scale(.65) translateY(-54%) rotate(180deg);
             box-shadow: 0 -.75rem 4rem rgba($color: $color-black, $alpha: .7);
-        }    
+        }
     }
 }
-
